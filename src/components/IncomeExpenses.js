@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
+// 35.42
+
 export const IncomeExpenses = () => {
   const { transactions } = useContext(GlobalContext);
   const amounts = transactions.map((item) => item.amount);
